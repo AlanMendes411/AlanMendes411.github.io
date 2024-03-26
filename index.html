@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>index.html</title>
+        <title>Cálculo de IMC</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
     </head>
     <body>
-    <h1>primeira página</h1>
+        <div>
+            <section>
+                <form onsubmit="return calcular(event)">    
+                    <label>Digite seu peso</label><br>
+                        <input type="text" name="peso" id="peso" placeholder="Exemplo: 80"><br>
+
+                    <label>Digite sua altura</label><br>
+                        <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.80"><br><br>
+
+                        <input type="submit" value="calcular IMC">
+                </form>
+                        <div id="resultado"></div>
+            </section>
+        </div>
     </body>
 </html>
